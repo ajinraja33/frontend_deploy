@@ -13,7 +13,15 @@ function Login() {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        "https://nodejs-updated.onrender.com/users/" + email
+        "https://nodejs-updated.onrender.com/users/" + email,
+        {
+          headers: {
+            "content-type": "text/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-methods": "*",
+            "Access-Control-Allow-Headers": "*",
+          },
+        }
       );
       if (!response.ok) {
         throw new Error("Failed to fetch data");

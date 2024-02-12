@@ -46,6 +46,14 @@ function Signup() {
     try {
       const response = await axios.post(
         "https://nodejs-updated.onrender.com/users",
+        {
+          headers: {
+            "content-type": "text/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-methods": "*",
+            "Access-Control-Allow-Headers": "*",
+          },
+        },
         formData
       );
       console.log("Data posted successfully:", response.data);
