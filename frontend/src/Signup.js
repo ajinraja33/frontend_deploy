@@ -49,9 +49,12 @@ function Signup() {
         {
           headers: {
             "content-type": "text/json",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-methods": "*",
-            "Access-Control-Allow-Headers": "*",
+            "Access-Control-Allow-Origin":
+              "https://nodejs-updated.onrender.com",
+            "Access-Control-Allow-methods":
+              "https://nodejs-updated.onrender.com",
+            "Access-Control-Allow-Headers":
+              "https://nodejs-updated.onrender.com",
           },
         },
         formData
